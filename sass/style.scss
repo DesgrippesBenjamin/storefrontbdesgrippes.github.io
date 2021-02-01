@@ -1,0 +1,44 @@
+
+        /*Import responsive screen*/
+
+    @import "libs/responsive.scss";
+
+        /*utils*/
+
+    @import "utils/variables";
+
+        /*base*/
+
+    @import "base/reset";
+
+        /*Componant*/
+
+    @import "composants/buttons";
+    
+    
+        /*Layout*/
+
+    @import "layout/header";
+
+    @import "layout/baner";
+
+    @import "layout/article-grid";
+
+
+         /* Pages */
+
+   @import "pages/article-detail";
+
+   @import "pages/shopping-cart";
+
+   @import "pages/modal-mycart";
+
+    
+        /* Media query */
+    
+    @import "libs/media-medium";
+
+    @import"libs/media-small";
+
+
+

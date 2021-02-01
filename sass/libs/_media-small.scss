@@ -1,0 +1,167 @@
+@media #{$smallScreen} {
+       
+    .header {
+       height: 50px;
+       margin: 0px;
+        &__toggleMenu {
+            font-size: 20px;
+        }
+        &__logo {
+            height: 50px;
+        }
+        .menu__lock img{
+            height: 20px;
+        }
+    }
+
+    .baner {
+        height: 150px;
+        &__image{
+            height: 150px;
+        }
+        .banerTextContenair {
+            height: 150px;
+            width: 80%; 
+            border-left: solid $white 8px;
+            border-right: solid $white 8px;
+            &__heading {
+                font-size: 20px;
+            }
+            &__quote {
+                font-size: 12px;
+                line-height: 15px;
+            }  
+        }
+    }
+
+    .articleGrid {
+       grid-gap: 5px;
+       margin-top: 2em;
+        .article {
+            height: 250px;
+            margin: 5px;
+            &__image {
+                height: 55%;
+            }
+            &__brand {
+                font-size:  $brandSize - 11px ;
+                margin: 1em auto 0px auto;
+            }
+            &__heading {
+                 text-align: center;
+                font-size: 12px; 
+                text-transform: uppercase;
+                margin: 9px;
+            }
+            &__price {
+                font-size: 15px;
+                margin: 0px;
+            }
+        }
+    }
+
+
+    .header__article--style {
+        padding: 0.5em;
+     }
+    .articleDetail {
+        
+        &__direction--style{
+            font-size: 10px;   
+        }
+        &__brand {
+            font-size: 14px;
+        }
+        &__heading {
+            font-size: 27px;
+        }
+        &__price {
+            font-size: 20px;
+            margin: 0px;
+            color: $grey;
+        } 
+        &__description {
+            font-size: 9px;
+            line-height: 15px;
+        }
+        .panel__addCart {
+            margin-bottom:2em ;
+            width: 70%;
+            &-input::placeholder {     
+                font-size: 16px;   
+            }
+            .article__button { 
+             font-size: 10px;   
+            }
+        } 
+    }
+
+    .shopping-cart {
+
+        &__title {
+            font-size: 25px;
+        }
+        &__article {
+            height: 200px;
+        }
+        &__article-details {
+            img {
+                height: 80px;
+                ;
+            }
+        }
+        &__article-detail {
+            height: 100px;
+            .quote {
+                margin: 5px 0px 0.6em 1em;
+                font-size: 13px;
+            }
+            .heading {
+                margin: 5px 0px 1em 1em;
+                text-transform: uppercase;
+                font-weight: bolder;
+                font-size: 11px;
+            }
+        }
+        .panel__addCart {
+            width: 100%;
+            align-items: center;
+            .group-btn {
+                flex-grow: 8
+            }
+            .price {
+                font-size: 25px;
+            }
+            
+        }
+        &__review {
+            &-title {
+                margin-top: 1em;
+                font-size: 12px;
+                line-height: 1px;
+            }
+            &-number {
+                margin-top: 2em;
+                font-size: 12px;
+                line-height: 12px;
+            }
+        }
+        &__total-price {
+            display: flex;
+            flex-direction: column;
+            margin: 0em ;
+            height: 100px;
+            align-items: center;
+            .btn {
+                width: 155px;
+                height: 25px;
+                padding-top: 15px;
+                font-size: 10px;
+            }
+            .next {
+                font-size: 12px;
+            }
+        } 
+    }
+
+}

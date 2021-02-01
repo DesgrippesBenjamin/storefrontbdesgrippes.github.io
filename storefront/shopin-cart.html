@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Shopping cart</title>
+</head>
+<body>
+    <header class="header">
+        <span class="header__toggleMenu">&#9776;</span>
+        <img class="header__logo" src="/storefront/media/logo.png" alt="the logo">
+        <nav class="menu">
+            <a class="menu__link" href="/index.html">HOME</a>
+            <a class="menu__link" href="#">SHOP ▼</a>
+            <a class="menu__link" href="#">JOURNAL</a>
+            <a class="menu__link" href="">MORE ▼</a>
+        </nav>
+        <nav class="cart">
+            <span class="menu__lock"><img src="/storefront/media/icons8-lock-32.png">(2)</span>
+            <a class="menu__link" href="#">MY CART (2) ▼</a>
+        </nav>
+    </header>
+    <main class="shopping-cart">
+        <h1 class="shopping-cart__title">Shopping Cart</h1>
+        <div class="shopping-cart__articles">
+            <div class="shopping-cart__captions">
+                <p class="shopping-cart__captions-product">product</p>
+                <p class="shopping-cart__captions-quantity">quantity</p>
+                <p class="shopping-cart__captions-total">total</p>
+                <p class="shopping-cart__captions-action">action</p>
+            </div>
+            <hr id="linehide">
+            <article class="shopping-cart__article">
+                <div class="shopping-cart__article-details">
+                    <img src="/storefront/media/hand-painted-blue-flat-dish.jpg" alt="belle assiette">
+                    <div class="shopping-cart__article-detail">
+                        <p class="quote">Kiriko</p>
+                        <h4 class="heading">hand Painted blue flat dish</h4>
+                        <p class="color">color: <span>white</span> </p>
+                    </div>
+                </div>
+                <div class="panel__addCart">
+                    <div class="group-btn">
+                        <input class="group-btn__input" placeholder="1">
+                        <span>
+                            <button class="group-btn__add">+</button>
+                            <button class="group-btn__minus">-</button>
+                        </span>
+                    </div>
+                    <p class="price">$28.00</p>
+                    <button class="close">&times;</button>
+                </div>
+            </article>
+            <hr>
+            <article class="shopping-cart__article">
+                <div class="shopping-cart__article-details">
+                    <img src="/storefront/media/mashiko-yaki-indigo-small-plate.jpg" alt="blabla bla">
+                    <div class="shopping-cart__article-detail">
+                        <p class="quote">Kiriko</p>
+                        <h4 class="heading">mashiko-yaki indigo small plate</h4>
+                        <p class="color">color: <span>white</span> </p>
+                    </div>
+                </div>
+                <div class="panel__addCart">
+                    <div class="group-btn">
+                        <input class="group-btn__input" placeholder="1">
+                        <span>
+                            <button class="group-btn__add">+</button>
+                            <button class="group-btn__minus">-</button>
+                        </span>
+                    </div>
+                    <p class="price">$28.00</p>
+                    <button class="close">&times;</button>
+                </div>
+            </article>
+            <hr>
+            <div class="shopping-cart__review">
+                <div class="shopping-cart__review-title">
+                    <p>cart overview</p>
+                    <p>subtotal</p>
+                    <p>total</p>
+                </div>
+                <div class="shopping-cart__review-number">
+                    <p>$56.00</p>
+                    <p class="cadprice">$56.00 CAD</p>
+                </div>
+            </div>
+            <hr>
+            <div class="shopping-cart__total-price">
+                <a class="next">continue shopping</a>
+                <a class="btn-format btn">checkout ($56.00)</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

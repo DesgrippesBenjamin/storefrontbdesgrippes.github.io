@@ -1,0 +1,74 @@
+/*article grid*/
+
+.articleGrid {
+    width: 100%;
+   display: grid;
+   margin-top: 3em;
+   justify-content: center;
+   grid-template-columns: auto auto auto;
+   grid-gap: 30px;
+   
+    .article {
+        height: 500px;
+        margin: 25px;
+        position: relative;
+        &__image {
+            height: 60%;
+            width: 100%;
+            object-fit: cover;
+        }
+        &__hoverButtons {
+            height: 60%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            background: rgba(253,253,253,0.6);
+            opacity: 0;
+            transition: opacity 0.30s ;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__button {
+            width: 50%;
+            padding: 1rem 0px;
+            color: $white;
+            &:link {
+                text-decoration: none;
+            }
+            &--ViewStyle {
+                margin-bottom: 2em;
+                background-color: $black;
+            }
+            &--AddStyle {
+                background-color: $grey;
+            }
+        }
+        &__hoverButtons:hover {
+            opacity: 1;
+        }
+        &__brand {
+            text-align: center;
+            color: $grey;
+            size: $brandSize;
+            margin: 2em auto 15px auto;
+        }
+        &__heading {
+            text-align: center;
+            font-size: 23px;
+            font-weight: lighter;
+            color: black;
+            text-transform: uppercase;
+            margin: 10px;
+        }
+        &__price {
+            text-align: center;
+            font-family: $fontCormorant;
+            color: $grey;
+            font-size: 25px;
+            margin: 15px;
+        }
+    }
+}

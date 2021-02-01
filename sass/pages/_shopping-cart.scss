@@ -1,0 +1,144 @@
+/* shopping cart*/
+
+.shopping-cart {
+    width: 100%;
+    background-color:rgb(243, 243, 243) ;
+    hr {
+        width: 100%;
+    }
+    &__title {
+        text-align: center;
+        font-family: $fontCormorant;
+        font-size: 50px;
+        padding: 2em 0px;
+    }
+    &__articles {
+        width: 80%;
+        margin: 0px auto;
+        background-color: $white ;
+        padding: 0px 5%;
+    }
+    &__captions {
+        display: flex;
+        padding-top: 3em;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: gray;
+        justify-content: space-between;
+        &-product {
+            width: 50%;
+        }
+    }
+    &__article {
+        margin-top: 1em ;
+        display: flex;
+        height: 200px;
+        justify-content: space-between;
+    }
+    &__article-details {
+        display: flex;
+        width: 50%;
+        img {
+            height: 100px;
+            width: 30%;
+        }
+    }
+    &__article-detail {
+        height: 100px;
+        width: 100%;
+        .quote {
+            margin: 5px 0px 0px 1em;
+            font-size: 13px;
+            color: gray;
+        }
+        .heading {
+            margin: 5px 0px 1em 1em;
+            text-transform: uppercase;
+            font-weight: lighter;
+            font-size: 13px;
+        }
+        .color {
+            margin: 5px 0px 0px 1em;
+            text-transform: uppercase;
+            color: gray;
+            font-size: 10px;
+            span {
+                color: $black;
+            }
+        }
+    }
+    .panel__addCart {
+        width: 45%;
+        display: flex;
+        justify-content: space-around;
+        .group-btn {
+            display: flex;
+            &__input {
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                font-size: 16px;
+            }
+            span {
+                display: flex;
+                flex-direction: column;
+                margin-left: 2px;
+            }
+            &__add {
+                margin-bottom: 2px;
+            }
+        }
+        .price {
+            color: gray;
+            font-family: $fontCormorant;
+            font-size: 20px;
+        }
+        .close {
+            height: 50px;
+            width: 50px;
+            background-color: $white;
+            border: none;
+            font-size: 50px;
+
+        }
+    }
+    &__review {
+        display: flex;
+        color: gray;
+        &-title {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            padding-left: 50% ;
+            text-transform: uppercase;
+            line-height: 16px;
+        }
+        &-number {
+            margin-top: 50px;
+            width: 30%;
+            text-align: end;
+            .cadprice {
+                color: $black;
+            }
+        }
+    }
+    &__total-price {
+        display: flex;
+        margin: 2em ;
+        height: 100px;
+        justify-content: space-between;
+        .btn {
+            width: 250px;
+            height: 40px;
+            padding-top: 20px;
+            font-size: 16px;
+            color: $white;
+            background-color: $black;
+        }
+        .next {
+            height: 20px;
+            text-transform: uppercase;
+            border-bottom: 2px solid black;
+        }
+    } 
+}
