@@ -1,6 +1,6 @@
-##"The perfect pixel"
+# The perfect pixel
 ***
-# Project background: This project was set up to test our skills in CSS HTML and surrounding technologies such as bootstrap, sass ...etc.
+##Project background: This project was set up to test our skills in CSS HTML and surrounding technologies such as bootstrap, sass ...etc.
 ***
 A list of technologies used within the project:
  * [HTML] Version HTML5
